@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="todolist.css">
+
+</head>
+<body>
+    <div class="todoWrap">
+        <h2>To do list</h2>
+        <div class="todoListDiv">
+            <div class="todoSearchBox">
+                <button type="button" class="Allbtn">✔</button>
+                <input type="text" placeholder="해야 할 일을 입력해주세요." class="todoSearch">
+            </div><!--//todoSearchBox-->
+            <div class="todoListBox">
+                <ul class="todoList">
+                    <!-- <li class="todoItem checked">
+                         <button type="button" class="checkBtn">✔</button> 
+                         <div class="todo">첫번쨰 할 일</div>
+                         <button type="button" class="delBtn">x</button> 
+                    </li>
+                    <li class="todoItem">
+                         <button type="button" class="checkBtn">✔</button> 
+                         <div class="todo">두번째 할 일</div>
+                         <button type="button" class="delBtn">x</button> 
+                    </li> -->
+                </ul>
+            </div><!--//todoListBox-->
+            <div class="todoBtnBox">
+                <div class="itemsCount">0 개</div>
+                <div class="btnWrap">
+                    <button class="allViewBtn selected" data-type="all">전체보기</button>
+                    <button class="ActiveBtn" data-type="Active">활성된 항목</button>
+                    <button class="CompletedBtn" data-type="Completed">삭제된 항목</button>
+                </div><!--//btnWrap-->
+                <button type="button" class="clearBtn">전체 삭제</button>
+            </div><!--//todoBtnBox-->
+        </div><!--//todoListDiv-->
+    </div><!--//todoWrap-->
+    <script src="todolist.js"></script>
+</body>
+</html>
